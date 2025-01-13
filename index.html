@@ -11,24 +11,29 @@
     <link rel="stylesheet" href="src/index.css" />
   </head>
   <body>
-    <div class="Weather-app">
+    <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city" required />
-          <input type="submit" value="search" />
+        <form class="search-form">
+          <input type="search" placeholder="Enter a city" required class="search-form-input" />
+          <input type="submit" value="search" class="search-form-button"/>
         </form>
       </header>
       <main>
-        <h1>Paris</h1>
+        <div class="weather-app-data">
+        <h1 class="weather-app-city">Paris</h1>
         <div>
-          <p>
+          <p weather-app-details>
             Tuesday 14:49, Scattered clouds
             <br />
-            Humidity: 66%, Wind 3.13km/h
+            Humidity:<strong> 66% </strong>, Wind <strong>3.13km/</strong>
           </p>
         </div>
-        <div>⛅ 12&degC</div>
-      </main>
+         <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-unit">°C</div>
+          </div> 
+        </main>
       <footer>
         This project was coded by
         <a href="https://github.com/ValerieGrowth" target="_blank"
@@ -38,9 +43,8 @@
         <a href="https://github.com/ValerieGrowth/Weather-App" target="_blank"
           >open-sourced on GitHub</a
         >and
-        <a href="https://spikes-weather-app.netlify.app/" target="_blank"></a>
-          hosted on Netlify</a
-        >
+        <a href="https://spikes-weather-app.netlify.app/" target="_blank">
+          hosted on Netlify</a>
       </footer>
     </div>
   </body>
