@@ -9,7 +9,7 @@ a {
 
 .weather-app {
   background: white;
-  max-width: 600px;
+  max-width: 800px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
@@ -51,14 +51,17 @@ main {
 
 .weather-app-city {
   margin: 0;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 25px;
+  line-height: 20px;
+  padding-bottom: 10px;
 }
-
+.city {
+  padding: 5px 0 35px 0;
+}
 .weather-app-details {
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(39, 33, 66, 0.4);
-  line-height: 24px;
+  line-height: 20px;
   font-weight: 500;
   position: fixed;
 }
@@ -72,6 +75,7 @@ main {
   right: 20px;
   top: 160px;
   position: fixed;
+  border-top: 1px solid #f9f7fe;
 }
 
 .weather-app-icon {
@@ -91,10 +95,10 @@ main {
 }
 
 footer {
-  padding: 30px 0 0 0;
+  padding: 30px 0 30px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.6);
-  bottom: 55px;
+  bottom: 40px;
   border-top: 1px solid #f9f7fe;
 }
